@@ -1,0 +1,396 @@
+\documentclass[12pt]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\usepackage{tikz} 
+
+\usepackage[margin=2cm]{geometry}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+
+
+\begin{document}
+
+\begin{titlepage}
+   \begin{center}
+       \vspace*{1cm}
+
+       \Large \textbf{CS131}
+       \\
+        MATHEMATICS FOR COMPUTER SCIENCE II
+        \\
+        \small Sample Questions
+            
+       \vspace{1.5cm}
+
+       \large \textbf{Antonio Brito}
+       \\
+       for Warwick.Guide
+
+       \vfill
+            
+       NOTE TO STUDENTS:
+       \\
+       This document tries to cover all possible bases of knowledge, but cannot possibly cover all types of question that you COULD be given. This is not a bible. Use other sources of revision to supplement your learning and problem solving skills.
+       
+            
+       \vspace{0.8cm}
+       
+       NOTE TO DCS STAFF:
+       \\
+       This document was made in its entirety by me. For concerns of cheating, malpractice, plagiarism or copyright infringement, please contact me at \href{mailto:antonio.brito@warwick.ac.uk}{\textbf{antonio.brito@warwick.ac.uk}} 
+     
+        \vspace{0.8cm}
+        NOTE TO EVERYONE:
+        \\
+        I do a lot of stuff, so I have office hours, where I will respond to queries quicker. Please take note of them, alongside my other projects here: \href{https://github.com/SwiftfoxStudios}{\textbf{https://github.com/SwiftfoxStudios}}
+            
+   \end{center}
+\end{titlepage}
+
+\section{Integers, Reals \& Complex Numbers}
+\begin{questions}
+
+\question Convert $12_{10}$ to base 8.
+
+\question In what base is $26^{2}$ equal to $6400_{10}$?
+
+\question Find $gcd(7544,115)$.
+
+\question Find $gcd(72,126,162)$.
+
+\question Find $x$ and $y$ such that $gcd(2322,654) = 2322x + 654y$.
+
+\question Solve $24 \equiv x\mod{5}$ such that $ 0 \leq x < 5$.
+
+\question Solve $7^{1383921} \equiv m\mod{4}$ such that $ 0 \leq m < 4$.
+
+\question Solve $2022^{2023} \equiv f\mod{20}$ such that $ 0 \leq f < 20$.
+
+\question Prove that every bounded set must have a least upper bound.
+
+\question Determine the real and imaginary parts of the following product:
+
+\begin{center}
+    $(2+3i)(2-i)$
+\end{center}
+
+\question Determine the modulus and argument of $6-8i$.
+
+\question Determine the complex conjugate of the expression:
+\begin{center}
+    $(3+i)(i-10)$
+\end{center}
+
+\question Express the complex number $5+2i$ in polar form.
+
+\question Put the complex number
+
+\begin{center}
+    \Large $\frac{12-5i}{3+2i}$
+\end{center}
+
+in the form $x+yi$ with $x,y \in \mathbb{R}$.
+
+\question Solve the following expression:
+
+\begin{center}
+    \large $(\sin{\frac{\pi}{6}} + i\cos{\frac{\pi}{6}})^{18}$
+\end{center}
+
+\question Find all $z \in \mathbb{C}$ such that $z^{3} = 1$.
+
+\question Prove, by induction or otherwise, that $\forall n \in \mathbb{Z}^{+}$,
+
+\begin{center}
+    $(\cos{\theta} + i\sin{\theta})^{n} = \cos{n\theta} + i\sin{n\theta}$
+\end{center}
+
+holds.
+
+\question Express $z^{6} - 4z^{3} + 8$ as the product of three factors with real coefficients, where $z \in \mathbb{C}$.
+
+\end{questions}
+
+
+\section{Linear \& Matrix Algebra}
+
+\begin{questions}
+
+\question Determine the length of the following vector
+
+\begin{center}
+    $(3,4,5)$
+\end{center}
+
+\question Find the unit vector in $\mathbb{R}^{2}$ with the same direction as $(2,-1)$.
+
+\question Find the angle between the vectors
+\begin{center}
+    $A = (4,2)$ \\ $B = (9,3)$
+\end{center}
+
+in $\mathbb{R}^{2}$.
+
+\question Find all vectors in $\mathbb{R}^{3}$ orthogonal to $(3,6,1)$ and $(6,8,1)$.
+
+\question Express $\underline{v} = (9,11,27)$ as a linear combination of the vectors
+
+\begin{center}
+    $\underline{p} = (3,-1,2)$ and $\underline{q} = (3,1,5)$
+\end{center}
+
+\question Is the set
+\begin{center}
+$ Q = \{(1,2,3),(1,-1,-1),(5,4,3)\}$
+\end{center}
+ linearly independent? If not, express this set as a linear combination of its vectors.
+ 
+\question Is the set
+\begin{center}
+$ Q = \{(1,0,1),(1,1,0),(0,1,-1)\}$
+\end{center}
+ linearly independent? If not, express this set as a linear combination of its vectors.
+ 
+\question Express the plane $x - 3y + 4z = 0$ as a span of vectors.
+ 
+\question Determine if
+\begin{center}
+$S = \{(x,y,z) \in \mathbb{R}^{3} | x = 4s - t, y = s + 3t, z = 3s\}$ with $s,t \in \mathbb{R}$
+\end{center}
+is a subspace in $\mathbb{R}^{3}$.
+ 
+\question Determine a basis for the subspace
+\begin{center}
+$S = \{(x,y,z) \in \mathbb{R}^{3} | z = 2x -3y\}$
+\end{center}
+
+\question Prove that a set of vectors, $S$, in an vector space, $V$ with dimension $|S|$ spans $V$, then it forms a basis.
+\question Prove that the set containing the basis vectors of $\mathbb{R}^{n}$ is linearly independent $\forall n \in \mathbb{Z}^{+}$.
+
+\question What is the determinant of the following matrix?
+
+\begin{center}
+$
+    \begin{bmatrix}
+4&-3&0\\
+2&-1&2\\
+1&5&7
+    \end{bmatrix}
+    $
+\end{center}
+
+\question Check whether the following matrix is invertible and find its matrix if it exists.
+
+\begin{center}
+$
+    \begin{bmatrix}
+1 & 2 & 3 & 5\\
+0 & 3 & 2 & 4\\
+2 & 10 & 2 & 0
+    \end{bmatrix}
+    $
+\end{center}
+
+\question Check whether the following matrix is invertible and find its matrix if it exists.
+
+\begin{center}
+$
+    \begin{bmatrix}
+3&0&2\\
+2&0&-2\\
+0&1&1
+    \end{bmatrix}
+    $
+\end{center}
+
+\question Determine the result of the calculation below.
+
+\begin{center}
+$
+    \begin{bmatrix}
+2&0\\
+1&9
+    \end{bmatrix}
+    \times
+        \begin{bmatrix}
+3&9\\
+4&7
+    \end{bmatrix}
+    $
+\end{center}
+
+\question Find the co-ordinates of the vector
+\begin{center} $[1,2,4]$
+\end{center} (in the standard basis) with respect to the basis \begin{center} $\{[1,4,6],[0,1,4],[0,0,1]\}$. \end{center}
+
+\question Let \underline{$u$} = $(2,3)$ with respect to the basis $V = \{(1,1),(1,-1)\}$. Following the transformation
+
+\begin{center}
+    $T(x,y) = (y,x+y,x)$,
+\end{center}
+
+what are the coordinates of \underline{$u$} with respect to the new basis $W = \{(1,2,0),(2,1,0),(0,0,1)\}$?
+
+\question Find the eigenvalues and eigenvectors of the matrix
+
+\begin{center}
+    $ A=   \begin{bmatrix}
+3&2\\
+3&8
+    \end{bmatrix}$
+\end{center}
+
+\question Find a diagonal matrix $D$ and an invertible matrix $P$ such that $P^{-1}BP = D$, where
+
+\begin{center}
+$ B=
+\begin{bmatrix}
+4&2&2\\-1&1&-1\\0&0&2
+\end{bmatrix}
+$
+\end{center}
+
+\end{questions}
+
+\section{Sequences, Recurrences \& Series}
+
+\begin{questions}
+
+\question Determine the limit, if it exists, of the sequence:
+
+\begin{center}
+    \Large $a_{n} = \frac{4n^{3}-2n^{2}+n-2}{6n^{2}-3n+2n^{3}}$
+\end{center}
+
+\question Evaluate $$\lim_{n \to \infty}\frac{n!}{n^n}$$
+
+\question Use the fact that:
+
+\begin{center}
+    \Large $\Sigma \frac{1}{4n^{2}-1}$
+\end{center}
+
+converges, as $n \to \infty$, to prove that
+
+\begin{center}
+    \Large $\Sigma \frac{1}{n^{k}}$
+\end{center}
+
+converges $\forall k \in \mathbb{R}, k \geq 2$, as $n \to \infty$.
+
+\question Determine if
+
+    $$\sum_{n=1}^{\infty}(\frac{n+2}{n^3-n^2+1})$$
+
+converges.
+
+\question Determine if
+
+    $$\sum_{n=1}^{\infty}(\frac{10^n}{n!})$$
+
+
+converges.
+
+\question Suppose $a_{n}$ and $b_{n}$ are sequences such that $0 \leq a_{n} \leq b_{n}$. Is it true that if $b_{n}$ converges, then $a_{n}$ converges? If false, give a counter-example.
+
+\question Suppose a sequence $a_{n}$ converges. Is it true that the series $\sum a_{n}$ converges?
+
+\question Determine if
+
+    $$\sum_{n=1}^{\infty}(\frac{\arctan(n)}{2^{n}+n^{2}})$$
+
+
+converges.
+
+\question What is the general solution to the recurrence:
+
+\begin{center}
+    $4x_{n}-12x_{n-1}+9x_{n-2}=0$
+\end{center}
+
+\question Find a particular solution to the recurrence:
+\begin{center}
+    $a_{n} - a_{n-1} - 6a_{n-2} = 0$
+\end{center}
+
+when $a_{0} = 1$ and $a_{1} = 8$.
+
+\question Determine the interval of convergence of the power series: $$\sum_{n=1}^{\infty}n^{n}x^{n}$$
+
+\question Determine the interval and radius of convergence of the power series: $$\sum_{n=0}^{\infty}(\sqrt{n}(x-1)^{n})$$.
+
+\end{questions}
+
+\section{Calculus}
+\begin{questions}
+
+\question Show that $3x^5-4x^2=3$ is solvable on the interval $[0,2]$ without directly solving the equation.
+
+\question Without solving, show that $3x^3-8x^2+x=-3$ has a root between $0$ and $1.$
+
+\question State the quotient rule, then using it, or otherwise, find $$\frac{d}{dx}(\frac{x^2}{5x})$$
+
+\question Differentiate the following expression with respect to $x$: $$\sin({\cos{x})}$$
+
+\question Find $\frac{\delta f}{\delta x}$ of the following expression: $$f(x,y) = \sin\sqrt{{\frac{y}{x^3}}}$$
+
+\question Find $\frac{dy}{dx}$ when: $$x=\frac{at}{1-t^3}$$ and $$y=\frac{at^2}{1-t^3}$$
+
+\question Sketch the curve represented by the function:
+$$y(x) = \frac{x^{3}}{x-1}$$ labelling all stationary points, asymptotes, limits and intersections with the axes.
+
+\question Sketch the curve represented by the function:
+$$f(x)=\frac{x^2-2x+2}{x-1}$$ labelling all stationary points, asymptotes, limits and intersections with the axes.
+
+\question Find:
+$$\lim_{x \to 0}(\frac{\sin{7x}}{\sin{4x}})$$
+
+\question Use L'H\^{o}pital's rule to determine:
+$$\lim_{x \to 0}(\frac{\sin{2x}+7x^{2}-2x}{x^{2}(x+1)^{2}})$$
+
+\question Find $\frac{dy}{dx}$ where: $$y \sin{x} +5y = 0$$
+
+\question State the differentiation with respect to $x$ of the following functions:
+
+\begin{parts}
+\part $$\arcsin{x}$$
+\part $$\arccos{x}$$
+\part $$\arctan{x}$$
+\end{parts}
+
+\question Find: $$\int{3x^2}\,dx$$
+
+\question Using integration by parts, or otherwise, find: $$\int{x^{4}\ln{x}\,dx}$$
+
+\question Using integration by substitution, or otherwise, find: $$\int{(x+4)^5}\,dx$$
+
+\question Find:
+$$\int{(\frac{2x+5}{x^2+5x-8}+\frac{1}{\sin{x}})\,dx}$$
+
+\question Find:
+$$\int \frac{x^2+2x+2}{(x+1)^3}\,dx$$
+
+\question Find:
+$$\int_{0}^{3\pi}|\sin{x}|\,dx$$
+
+\question Find the first three non-zero terms in the Taylor series expansion of $\sin^{2}x$ around the point $x=\pi$.
+
+\question Find the first three terms in the Taylor series expansion of $\ln{(3+4x)}$ around the point $x=0$.
+
+\question Solve the following separable differential equation: $$x(y^{2}-1)-y(x^{2}-1)\frac{dy}{dx}=0$$
+
+\question Find $y'$ in the expression:
+$$7y^{2}+\sin{3x}=12-y^{4}$$
+
+\question Solve the following second order differential equation: $$\frac{d^{2}y}{dx^{2}} - 3\frac{dy}{dx} +2y = 10\sin{x}$$ with $y = 6$ and $y' = 5$ at $x=0$.
+
+\end{questions}
+
+\end{document}
